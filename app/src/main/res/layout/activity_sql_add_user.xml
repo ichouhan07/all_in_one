@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".sqlLite.SqlAddUserActivity">
+    <include
+        android:id="@+id/customToolbar"
+        layout="@layout/custom_toolbar_layout" />
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/rl"
+        android:layout_width="108dp"
+        android:layout_height="108dp"
+        android:layout_marginTop="16dp"
+        android:layout_gravity="center">
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/sq_add_profile_img"
+            android:layout_width="102dp"
+            android:layout_height="103dp"
+            android:src="@drawable/user_empty_img"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintBottom_toBottomOf="parent"/>
+        <ImageView
+            android:id="@+id/sq_add_profile_btn"
+            android:layout_width="31dp"
+            android:layout_height="31dp"
+            android:layout_marginBottom="15dp"
+            android:src="@drawable/ic_edit_image"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintBottom_toBottomOf="parent"/>
+    </androidx.constraintlayout.widget.ConstraintLayout>
+    <EditText
+        android:id="@+id/sq_add_name"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="40dp"
+        android:layout_marginStart="12dp"
+        android:layout_marginEnd="12dp"
+        android:hint="Enter Your Name"
+        android:inputType="text"/>
+    <EditText
+        android:id="@+id/sq_add_email"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="40dp"
+        android:layout_marginStart="12dp"
+        android:layout_marginEnd="12dp"
+        android:hint="Enter Your Email"
+        android:inputType="textEmailAddress"/>
+    <EditText
+        android:id="@+id/sq_add_number"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="40dp"
+        android:layout_marginStart="12dp"
+        android:layout_marginEnd="12dp"
+        android:hint="Enter Your Number"
+        android:maxLength="10"
+        android:inputType="number"/>
+    <EditText
+        android:id="@+id/sq_add_dob"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="40dp"
+        android:layout_marginStart="12dp"
+        android:layout_marginEnd="12dp"
+        android:hint="Enter Your D.O.B"
+        android:inputType="date"/>
+    <Button
+        android:id="@+id/sq_add_submit_btn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:text="Submit"
+        android:layout_marginTop="75dp"/>
+</LinearLayout>

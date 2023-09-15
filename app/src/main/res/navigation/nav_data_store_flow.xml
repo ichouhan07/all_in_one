@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_data_store_flow"
+    app:startDestination="@id/dataStoreFragment">
+    <fragment
+        android:id="@+id/dataStoreFragment"
+        android:name="com.applligent.hilt_di_retrofit_viewmodel.dataStoreAndNavigation.DataStoreFragment"
+        android:label="fragment_data_store"
+        tools:layout="@layout/fragment_data_store" >
+        <action
+            android:id="@+id/action_dataStoreFragment_to_externalStorageFragment"
+            app:destination="@id/externalStorageFragment" />
+        <action
+            android:id="@+id/action_dataStoreFragment_to_internalStorageFragment"
+            app:destination="@id/internalStorageFragment" />
+        <action
+            android:id="@+id/action_dataStoreFragment_to_preferenceFragment"
+            app:destination="@id/preferenceFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/externalStorageFragment"
+        android:name="com.applligent.hilt_di_retrofit_viewmodel.dataStoreAndNavigation.externalStorage.ExternalStorageFragment"
+        android:label="fragment_external_storage"
+        tools:layout="@layout/fragment_external_storage" >
+        <action
+            android:id="@+id/action_externalStorageFragment_to_viewExternalInfoFragment"
+            app:destination="@id/viewExternalInfoFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/viewExternalInfoFragment"
+        android:name="com.applligent.hilt_di_retrofit_viewmodel.dataStoreAndNavigation.externalStorage.ViewExternalInfoFragment"
+        android:label="fragment_view_external_info"
+        tools:layout="@layout/fragment_view_external_info" />
+    <fragment
+        android:id="@+id/internalStorageFragment"
+        android:name="com.applligent.hilt_di_retrofit_viewmodel.dataStoreAndNavigation.internalStorage.InternalStorageFragment"
+        android:label="fragment_internal_storage"
+        tools:layout="@layout/fragment_internal_storage" />
+    <fragment
+        android:id="@+id/preferenceFragment"
+        android:name="com.applligent.hilt_di_retrofit_viewmodel.dataStoreAndNavigation.preferenceDataStore.PreferenceFragment"
+        android:label="fragment_preference"
+        tools:layout="@layout/fragment_preference" />
+</navigation>

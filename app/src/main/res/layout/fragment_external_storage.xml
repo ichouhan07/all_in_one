@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".dataStoreAndNavigation.externalStorage.ExternalStorageFragment">
+    <Button
+        android:id="@+id/saveButton_public"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_below="@+id/editText_data"
+        android:layout_marginEnd="48dp"
+        android:layout_marginTop="8dp"
+        android:onClick="savePublicly"
+        android:padding="8dp"
+        android:text="Save Publicly"
+        android:textAllCaps="false" />
+    <Button
+        android:id="@+id/saveButton_private"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/editText_data"
+        android:layout_marginStart="48dp"
+        android:layout_marginTop="8dp"
+        android:layout_toEndOf="@+id/saveButton_public"
+        android:onClick="savePrivately"
+        android:padding="8dp"
+        android:text="Save Privately"
+        android:textAllCaps="false" />
+
+    <Button
+        android:id="@+id/viewButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/saveButton_public"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="16dp"
+        android:onClick="viewInformation"
+        android:padding="8dp"
+        android:text="View Information"
+        android:textAllCaps="false" />
+
+    <EditText
+        android:id="@+id/editText_data"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textView_data"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="8dp"
+        android:autofillHints=""
+        android:hint="Enter your information"
+        android:inputType="textMultiLine"/>
+
+    <TextView
+        android:id="@+id/textView_data"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="8dp"
+        android:text="Enter the Text Data"
+        android:textAllCaps="true"
+        android:textStyle="bold"/>
+
+</RelativeLayout>

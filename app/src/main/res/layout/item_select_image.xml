@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:padding="20dp"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@color/white">
+    <ImageView
+        android:id="@+id/dialog_select_img_close"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:src="@drawable/ic_close_grey"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"/>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center_horizontal"
+        android:orientation="vertical"
+        app:layout_constraintTop_toTopOf="parent">
+        <TextView
+            android:id="@+id/tv_dialog_select_img_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="vbk bhsakbfl. hfdhkfn  dkaw"
+            android:textSize="20sp"
+            android:gravity="center"
+            android:fontFamily="@font/lato_700"/>
+        <TextView
+            android:id="@+id/tv_dialog_select_img_des"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="vbk bhsakbfl. hfdhkfn  dkaw"
+            android:textSize="16sp"
+            android:gravity="center"
+            android:layout_marginTop="15dp"
+            android:fontFamily="@font/lato_400"/>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginTop="25dp">
+            <androidx.appcompat.widget.AppCompatButton
+                android:layout_weight="1"
+                android:id="@+id/dialog_select_img_galley_btn"
+                android:layout_width="match_parent"
+                android:layout_height="45dp"
+                android:gravity="center"
+                android:textAllCaps="false"
+                android:fontFamily="@font/lato_700"
+                android:textSize="17sp"
+                android:text="Gallery"
+                android:textColor="@color/white" />
+            <View
+                android:layout_width="20dp"
+                android:layout_height="match_parent"/>
+            <Button
+                android:layout_weight="1"
+                android:id="@+id/dialog_select_img_camera_btn"
+                android:layout_width="match_parent"
+                android:layout_height="45dp"
+                android:gravity="center"
+                android:textAllCaps="false"
+                android:fontFamily="@font/lato_700"
+                android:textSize="17sp"
+                android:text="Camera"
+                android:textColor="@color/white" />
+        </LinearLayout>
+    </LinearLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

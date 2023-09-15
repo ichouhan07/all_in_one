@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">All_In_One</string>
+    <string name="title">Title</string>
+    <string name="name">नाम</string>
+    <string name="address">पता</string>
+    <string name="save">सेव</string>
+    <string name="add_photo">तस्वीर जोडे़!</string>
+    <string name="take_photo_from_gallery_or_camera">गैलरी या कैमरे से फोटो चुने!</string>
+    <string name="no">No</string>
+    <string name="yes">Yes</string>
+</resources>
